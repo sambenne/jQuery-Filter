@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Filter Plugin</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<ul id="filter">
+			<li class="current"><a href="#">All</a></li>
+			<li><a href="#" data-tag="design">Design</a></li>
+			<li><a href="#" data-tag="development">Development</a></li>
+			<li><a href="#" data-tag="cms">CMS</a></li>
+			<li><a href="#" data-tag="integration">Integration</a></li>
+			<li><a href="#" data-tag="information-architecture">Information Architecture</a></li>
+		</ul>
+
+		<ul id="portfolio">
+			<li data-tags="cms integration"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/a-list-apart.png" alt="" height="115" width="200">A List Apart</a></li>
+			<li data-tags="integration design"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/apple.png" alt="" height="115" width="200">Apple</a></li>
+			<li data-tags="design development"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/cnn.png" alt="" height="115" width="200">CNN</a></li>
+			<li data-tags="cms"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/digg.png" alt="" height="115" width="200">Digg</a></li>
+			<li data-tags="design cms integration"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/espn.png" alt="" height="115" width="200">ESPN</a></li>
+			<li data-tags="design integration"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/facebook.png" alt="" height="115" width="200">Facebook</a></li>
+			<li data-tags="cms information-architecture"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/google.png" alt="" height="115" width="200">Google</a></li>
+			<li data-tags="integration development"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/netflix.png" alt="" height="115" width="200">Netflix</a></li>
+			<li data-tags="information-architecture"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/nettuts.png" alt="" height="115" width="200">NETTUTS</a></li>
+			<li data-tags="design information-architecture cms"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/twitter.png" alt="" height="115" width="200">Twitter</a></li>
+			<li data-tags="development"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/white-house.png" alt="" height="115" width="200">White House</a></li>
+			<li data-tags="cms design"><a href="#"><img src="http://d2o0t5hpnwv4c1.cloudfront.net/196_jquery/images/youtube.png" alt="" height="115" width="200">YouTube</a></li>
+		</ul>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script src="jquery.filter.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// $('#filter').filter();
+			$('#filter').filter({
+				animationspeed: 500
+			});
+		});
+	</script>
+</body>
+</html>
